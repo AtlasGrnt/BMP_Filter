@@ -1,4 +1,8 @@
 # Ignorer les extensions en .bmp
 *.bmp
 # Ignorer les fichiers de l'IDE
+<<<<<<< HEAD
 .vscode/
+=======
+.vscode/
+>>>>>>> 636ace9de20c1c92fef4681085c380514d7cdde5
