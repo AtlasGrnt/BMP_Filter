@@ -246,7 +246,12 @@ void destroyBitmap(BITMAP *bmp)
  */
 PIXEL *getPixel(PIXEL *raster, int width, int height, int y, int x)
 {
-    /* TODO */
+    Bitmap myBitmap = new Bitmap(raster);
+
+    Color pixelColor = myBitmap.GetPixel(x,y);
+
+    return pixelColor;
+}
 }
 
 /*
@@ -255,7 +260,11 @@ PIXEL *getPixel(PIXEL *raster, int width, int height, int y, int x)
  */
 void setPixel(PIXEL *raster, int width, int height, int y, int x, PIXEL *value)
 {
-    /* TODO */
+    Bitmap myBitmap = new Bitmap(raster);
+
+    Color pixelColor = myBitmap.SetPixel(x,y);
+
+    return myBitmap;
 }
 
 /*
